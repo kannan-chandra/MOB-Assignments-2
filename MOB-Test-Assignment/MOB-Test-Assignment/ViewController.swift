@@ -10,6 +10,12 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var stepper: UIStepper!
+    @IBAction func stepperPressed(sender: UIStepper) {
+        print(stepper.value)
+        var a = String(stepper.value)
+        print(a + "hello")
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
